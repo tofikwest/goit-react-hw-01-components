@@ -1,11 +1,18 @@
 import React from "react";
-import Painting from "./components/Painting";
-
+import FriendList from "./components/FriendList";
+import friends from "./JSON/friends.json";
 const App = () => {
   return (
-    <div>
-      <h1>Главный компонент сайта</h1>
-    </div>
+    <ul>
+      {friends.map((friend) => (
+        <FriendList
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
+          key={friend.id}
+        />
+      ))}
+    </ul>
   );
 };
 export default App;

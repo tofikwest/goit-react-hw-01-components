@@ -1,6 +1,7 @@
 import React from "react";
 import FriendList from "./components/FriendList";
 import friends from "./JSON/friends.json";
+
 const App = () => {
   return (
     <ul>

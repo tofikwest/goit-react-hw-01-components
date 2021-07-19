@@ -1,18 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
+import data from "../data/data";
 
-const Statistics = ({ id, label, percentage }) => {
+const Statistics = () => {
   return (
-    <section class="statistics">
-      <h2 class="title">Upload stats</h2>
+    <section className="statistics">
+      <h2 className="title">Upload stats</h2>
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">4%</span>
-        </li>
+      <ul className="stat-list">
+        {data.stat.map(({ id, label, percentage }) => (
+          <li className="item" key={id}>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}%</span>
+          </li>
+        ))}
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  percentage: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
 };
 export default Statistics;

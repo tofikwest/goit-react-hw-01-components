@@ -1,5 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Profile.css';
 const Profile = ({
   avatar,
   name,
@@ -36,8 +37,8 @@ const Profile = ({
 
 Profile.defaultProps = {
   avatar:
-    "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-  name: "User",
+    'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
+  name: 'User',
 };
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,

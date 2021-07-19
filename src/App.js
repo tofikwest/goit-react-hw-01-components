@@ -1,15 +1,15 @@
-import React from "react";
-import data from "./data/data";
-import FriendList from "./components/FriendList";
-import Profile from "./components/Profile";
-import Statistics from "./components/Statistics";
-import TransactionHistory from "./components/TransactionHistory";
+import React from 'react';
+import data from './data/data';
+import FriendList from './components/FriendList/FriendList';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 const App = () => {
   return (
     <>
       <ul>
-        {data.friends.map((friend) => (
+        {data.friends.map(friend => (
           <FriendList
             avatar={friend.avatar}
             name={friend.name}

@@ -1,0 +1,35 @@
+.stat-list .item {
+  border: 1px solid black;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 660px;
+  border: 1px solid black;
+}
+.statistics ul {
+  padding: 0;
+}
+.stat-list {
+  display: flex;
+}
+.item .percentage {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 5px;
+  font-size: 25px;
+}
+.item .label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  color: grey;
+  font-size: 26px;
+}
+.statistics .title {
+  color: black;
+  font-size: 28px;
+}

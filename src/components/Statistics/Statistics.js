@@ -1,6 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import data from "../data/data";
+import React from 'react';
+import PropTypes from 'prop-types';
+import data from '../../data/data';
+import './Statistics.css';
 
 const Statistics = () => {
   return (

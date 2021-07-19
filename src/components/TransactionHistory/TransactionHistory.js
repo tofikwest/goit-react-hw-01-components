@@ -1,6 +1,7 @@
-import React from "react";
-import data from "../data/data";
-import PropTypes from "prop-types";
+import React from 'react';
+import data from '../../data/data';
+import PropTypes from 'prop-types';
+import './TransactionHistory.css';
 
 const TransactionHistory = () => {
   return (

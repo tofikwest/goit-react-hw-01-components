@@ -1,10 +1,17 @@
 import React from 'react';
 import './FriendList.css';
 import FriendListItem from './FriendListItem';
-const FriendList = () => {
+const FriendList = ({ friends }) => {
   return (
     <ul>
-      <FriendListItem />
+      {friends.map(friend => (
+        <FriendListItem
+          avatar={friend.avatar}
+          isOnline={friend.isOnline}
+          name={friend.name}
+          key={friend.id}
+        />
+      ))}
     </ul>
   );
 };

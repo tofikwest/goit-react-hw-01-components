@@ -8,12 +8,7 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 const App = () => {
   return (
     <>
-      <FriendList
-        avatar={data.friends.avatar}
-        name={data.friendsname}
-        isOnline={data.friends.isOnline}
-        key={data.friends.id}
-      />
+      <FriendList friends={data.friends} />
       <Profile
         name={data.user.name}
         tag={data.user.tag}

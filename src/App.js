@@ -1,9 +1,9 @@
 import React from 'react';
-import data from './data/data';
 import FriendList from './components/FriendList/FriendList';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import data from './data/data';
 
 const App = () => {
   return (

@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import data from '../../data/data';
 import './Statistics.css';
 
-const Statistics = () => {
+const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      <h2 className="title">{title ? title : ''}</h2>
 
       <ul className="stat-list">
-        {data.stat.map(({ id, label, percentage }) => (
+        {stats.map(({ id, label, percentage }) => (
           <li className="item" key={id}>
             <span className="label">{label}</span>
             <span className="percentage">{percentage}%</span>

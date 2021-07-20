@@ -1,9 +1,8 @@
 import React from 'react';
-import data from '../../data/data';
 import PropTypes from 'prop-types';
 import './TransactionHistory.css';
 
-const TransactionHistory = () => {
+const TransactionHistory = ({ items }) => {
   return (
     <table className="transaction-history">
       <thead>
@@ -14,7 +13,7 @@ const TransactionHistory = () => {
         </tr>
       </thead>
 
-      {data.transactions.map(({ id, type, amount, currency }) => (
+      {items.map(({ id, type, amount, currency }) => (
         <tbody key={id}>
           <tr>
             <td>{type}</td>

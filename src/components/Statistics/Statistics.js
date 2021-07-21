@@ -19,7 +19,9 @@ const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  percentage: PropTypes.number.isRequired,
-  label: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    percentage: PropTypes.number,
+    label: PropTypes.string,
+  }).isRequired,
 };
 export default Statistics;
